@@ -46,7 +46,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 .recognizing > .icon {
   background-color: #d23f31;
-  color: #fff;
+  fill: #fff;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

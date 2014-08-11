@@ -126,19 +126,19 @@ Example:
     },
     
     result: function(e) {
-      var t, ft = '', ct = '';
+      var t, ct = '', isFinal;
       for (var i = 0, r; r = e.results[i]; i++) {
         t = r[0] && r[0].transcript || '';
-        ft = r.isFinal && t;
         ct += t;
+        isFinal = r.isFinal;
       }
       this.transcript = t;
       this.completeTranscript = ct;
       this.fire('speech-mic-result', {
         results: e.results,
         transcript: t,
-        finalTranscript: ft,
-        completeTranscript: ct
+        completeTranscript: ct,
+        isFinal: isFinal
       });
     },
     
