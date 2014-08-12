@@ -102,6 +102,12 @@ Example:
       }
     },
     
+    languageChanged: function() {
+      if (this.recognition) {
+        this.recognition.lang = this.language;
+      }
+    },
+    
     toggleRecognition: function() {
       if (!this.recognition) {
         return;
